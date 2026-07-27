@@ -34,9 +34,8 @@ class PredictionPage extends StatefulWidget {
 }
 
 class _PredictionPageState extends State<PredictionPage> {
-  // IMPORTANT: replace with your deployed Render URL, e.g.
-  // "https://your-service-name.onrender.com/predict"
-  static const String apiUrl = "https://YOUR-RENDER-URL.onrender.com/predict";
+
+  static const String apiUrl = "https://linear-regression-model-fm0j.onrender.com";
 
   final _formKey = GlobalKey<FormState>();
 
