@@ -7,9 +7,8 @@ attendance, health spending, physician density, female literacy, electricity acc
 coverage — using a regression model trained on World Bank data across 48 Sub-Saharan African countries.
 
 ## Public API Endpoint (Swagger UI)
-**[https://YOUR-RENDER-URL.onrender.com/docs](https://YOUR-RENDER-URL.onrender.com/docs)**
-*(replace with your actual Render URL once deployed — test all requests directly in the Swagger "Try it
-out" UI at that link, no localhost required)*
+**https://maternal-health-api-7r64.onrender.com**
+*
 
 ## Video Demo
 **YouTube link:**(https://docs.google.com/document/d/1OyjQ96dDrI7YoVQIdunnhef7snxMbeaUjphOPrhk9c4/edit?usp=sharing)
@@ -29,13 +28,13 @@ linear_regression_model/
 │   │   └── README.md                    # API run + Render deployment instructions
 │   └── FlutterApp/
 │       └── maternal_health_predictor/     # single-page Flutter prediction app
-├── pyproject.toml
+├── pyproject. toml
 └── uv.lock
 ```
 
 ## Running the Mobile App
 1. Install Flutter (https://docs.flutter.dev/get-started/install) if you haven't already.
-2. `cd summative/FlutterApp/maternal_health_predictor`
+2. `cd summative/FlutterApp/maternal_health_predictor.`
 3. `flutter pub get`
 4. Open `lib/main.dart` and replace the placeholder `apiUrl` constant with your deployed Render URL
    (e.g. `https://YOUR-RENDER-URL.onrender.com/predict`).
@@ -46,11 +45,11 @@ linear_regression_model/
 This project uses **uv** for package and virtual environment management.
 ```bash
 # from the repo root
-uv sync                      # creates .venv and installs everything in pyproject.toml
+uv sync                      # creates .venv and installs everything in pyproject. toml toml
 uv run jupyter notebook summative/linear_regression/multivariate.ipynb
 
 # in a second terminal, to run the API locally:
 cd summative/API
-uv run uvicorn prediction:app --reload
+uv run uvicorn prediction: app --reload
 # then open http://127.0.0.1:8000/docs
 ```
