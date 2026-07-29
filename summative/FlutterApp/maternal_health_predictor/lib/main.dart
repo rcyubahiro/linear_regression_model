@@ -35,7 +35,7 @@ class PredictionPage extends StatefulWidget {
 
 class _PredictionPageState extends State<PredictionPage> {
 
-  static const String apiUrl = "https://linear-regression-model-fm0j.onrender.com";
+  static const String apiUrl = "https://maternal-health-api-7r64.onrender.com";
 
   final _formKey = GlobalKey<FormState>();
 
@@ -52,9 +52,7 @@ class _PredictionPageState extends State<PredictionPage> {
   String _resultText = "";
   bool _isError = false;
 
-  // Field definitions: label, controller, min, max — mirrors the Pydantic
-  // range constraints in the API so the user gets instant feedback instead
-  // of waiting on a round trip for an out-of-range value.
+  
   late final List<_FieldSpec> _fields = [
     _FieldSpec("Year", _yearController, 2000, 2035),
     _FieldSpec("Skilled birth attendance (%)", _skilledBirthController, 0, 100),
