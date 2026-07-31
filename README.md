@@ -11,7 +11,7 @@ coverage — using a regression model trained on World Bank data across 48 Sub-S
 *
 
 ## Video Demo
-**YouTube link:**(https://docs.google.com/document/d/1OyjQ96dDrI7YoVQIdunnhef7snxMbeaUjphOPrhk9c4/edit?usp=sharing)
+**YouTube link:**https://youtu.be/Vqlb3cr3QpE
 
 ## Repository Structure
 ```
