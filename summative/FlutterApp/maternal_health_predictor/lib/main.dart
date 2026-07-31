@@ -35,7 +35,7 @@ class PredictionPage extends StatefulWidget {
 
 class _PredictionPageState extends State<PredictionPage> {
 
-  static const String apiUrl = "https://maternal-health-api-7r64.onrender.com";
+  static const String apiUrl = "https://maternal-health-api-7r64.onrender.com/predict";
 
   final _formKey = GlobalKey<FormState>();
 
